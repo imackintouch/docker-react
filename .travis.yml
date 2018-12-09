@@ -6,4 +6,4 @@ before_install:
   - docker build -t imackintouch/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run imackintouch/docker-react run npm run test -- --coverage
+  - docker run imackintouch/docker-react npm run test -- --coverage
